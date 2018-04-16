@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"refresh": "npm install && lerna bootstrap"
+	},
+	"devDependencies": {
+		"lerna": "^2.10.1"
+	}
+}
