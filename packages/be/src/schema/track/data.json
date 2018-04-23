@@ -1,0 +1,11 @@
+{
+  "items": {
+    "track-1": {
+      "id": "track-1",
+      "name": "Californication",
+      "artistId": "artist-2",
+      "album": "Californication"
+    }
+  },
+  "total": 1
+}
