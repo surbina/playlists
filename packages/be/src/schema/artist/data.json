@@ -1,0 +1,30 @@
+{
+  "items": {
+    "artist-1": {
+      "id": "artist-1",
+      "name": "Divididos",
+      "description": "Divididos es una banda argentina de rock, fundada en 1988 por Ricardo Mollo y Diego Arnedo, ex-integrantes de Sumo, cuando ésta se disolvió por la muerte de su líder, Luca Prodan. En sus trabajos han incursionado en estilos musicales locales como el folklore. Ha sido galardonada en múltiples ocasiones tanto de forma grupal como individual. En el 2011 fue ganadora del Premio Gardel de Oro (la distinción más destacada de la música nacional) en reconocimiento a su exitosa trayectoria, premio que ha sido entregado solo diecinueve veces a distintos artistas tales como Luis Alberto Spinetta, Charly García, León Gieco, Mercedes Sosa y Gustavo Cerati, entre otros."
+    },
+    "artist-2": {
+      "id": "artist-2",
+      "name": "Red Hot Chili Peppers",
+      "description": "Red Hot Chili Peppers es una banda de rock alternativo y funk rock estadounidense formada en 1983 en Los Ángeles, California. Sus integrantes son, actualmente, el vocalista Anthony Kiedis, el guitarrista Josh Klinghoffer, el bajista Michael \"Flea\" Balzary, y el baterista Chad Smith. El estilo musical de la banda fusiona el funk tradicional con el rock y el rock alternativo incluyendo elementos de otros géneros como el rap, pop rock, heavy metal, dance, punk, hip hop e indie rock.1​3​ Son considerados los inventores del punk funk."
+    },
+    "artist-3": {
+      "id": "artist-3",
+      "name": "Soda Stereo",
+      "description": "Soda Stereo fue una banda de rock argentina, formada en Buenos Aires en el año 1982 por Gustavo Cerati (voz, guitarra), Héctor «Zeta» Bosio (bajo) y Carlos Alberto Ficicchia «Charly Alberti» (batería), considerada una de las más influyentes e importantes bandas iberoamericanas de todos los tiempos y una leyenda de la música latina. La banda tuvo un papel muy importante en el desarrollo y la difusión del rock iberoamericano durante las décadas de 1980 y 1990. Fueron el primer grupo de habla hispana en conseguir un éxito masivo en Latinoamérica. Soda Stereo ha encabezado las listas de todos los tiempos en su nativa Argentina, donde se establecieron varios récords de ventas de discos y asistencias a conciertos."
+    },
+    "artist-4": {
+      "id": "artist-4",
+      "name": "Sumo",
+      "description": "Sumo fue una banda argentina de post-punk y reggae, formada en el año 1981, en la ciudad de Nono en las sierras de Córdoba y luego trasladada a Hurlingham, donde alcanzó la fama. Fue disuelta a principios de 1988. Con el pasar de los años, el éxito de su trayectoria, hizo que se convierta en uno de los grupos más influyentes del rock argentino y latinoamericano."
+    },
+    "artist-5": {
+      "id": "artist-5",
+      "name": "Divididos",
+      "description": "Luis Alberto Spinetta, conocido como El Flaco o simplemente por su apellido, fue un cantante, guitarrista, poeta, escritor y compositor argentino de rock, considerado uno de los más importantes y respetados músicos en Hispanoamérica. La complejidad instrumental, lírica y poética de sus obras le valió el reconocimiento en muchas partes del mundo. En 1997 la revista Billboard lo definió como «ícono del rock argentino», y en 2001 el diario Página/12 lo consideró el artista más influyente en la historia del rock argentino, tras hacer una encuesta con celebridades del rock local. En 2014 se estableció por ley que el día de su nacimiento fuera el Día Nacional del Músico en Argentina."
+    }
+  },
+  "total": 5
+}
