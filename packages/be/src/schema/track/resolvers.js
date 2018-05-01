@@ -6,10 +6,10 @@ function getTrack(obj, { id }) {
 }
 
 export default {
-  public: {
+  queryFieldResolvers: {
     track: getTrack,
   },
-  private: {
+  typeResolvers: {
     Track: {
       artist: track => artistData.items[track.artistId],
     }

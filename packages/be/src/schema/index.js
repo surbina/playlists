@@ -1,5 +1,11 @@
-import { typeDefs as artistTypeDefs } from './artist';
-import { typeDefs as trackTypeDefs } from './track';
+import {
+  typeDefs as artistTypeDefs,
+  resolvers as artistResolvers,
+} from './artist';
+import {
+  typeDefs as trackTypeDefs,
+  resolvers as trackResolvers,
+} from './track';
 import {
   typeDefs as queryTypeDefs,
   resolvers as queryResolvers,
@@ -13,4 +19,6 @@ export const typeDefs = `
 
 export const resolvers = {
   ...queryResolvers,
+  ...artistResolvers.typeResolvers,
+  ...trackResolvers.typeResolvers,
 };

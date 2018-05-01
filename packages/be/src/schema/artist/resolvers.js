@@ -14,11 +14,11 @@ function getArtists() {
 }
 
 export default {
-  public: {
+  queryFieldResolvers: {
     artist: getArtist,
     artists: getArtists,
   },
-  private: {
+  typeResolvers: {
     Artist: {
       tracks: artist => values(trackData.items)
           .filter(track => track.artistId === artist.id),

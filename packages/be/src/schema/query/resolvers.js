@@ -1,11 +1,9 @@
-import { resolvers as artistResolvers } from '../artist';
-import { resolvers as trackResolvers } from '../track';
+import { resolvers as artist } from '../artist';
+import { resolvers as track } from '../track';
 
 export default {
   Query: {
-    ...artistResolvers.public,
-    ...trackResolvers.public,
+    ...artist.queryFieldResolvers,
+    ...track.queryFieldResolvers,
   },
-  ...artistResolvers.private,
-  ...trackResolvers.private,
 };
