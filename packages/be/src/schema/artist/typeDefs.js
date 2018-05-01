@@ -3,7 +3,7 @@ export default `
     id: String,
     name: String,
     description: String,
-    tracks: [Track],
+    tracks: Tracks,
   }
 
   type Artists {

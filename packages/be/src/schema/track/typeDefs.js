@@ -5,4 +5,9 @@ export default `
     artist: Artist,
     album: String,
   }
+
+  type Tracks {
+    items: [Track]
+    total: Int
+  }
 `;

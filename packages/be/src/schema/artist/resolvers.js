@@ -20,8 +20,14 @@ export default {
   },
   typeResolvers: {
     Artist: {
-      tracks: artist => values(trackData.items)
-          .filter(track => track.artistId === artist.id),
+      tracks: artist => {
+        const items = values(trackData.items).filter(track => (track.artistId === artist.id));
+
+        return {
+          items,
+          total: items.length,
+        }
+      },
     },
   }
 };

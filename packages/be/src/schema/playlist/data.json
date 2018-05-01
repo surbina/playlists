@@ -1,0 +1,12 @@
+{
+  "items": {
+    "playlist-1": {
+      "id": "playlist-1",
+      "name": "Lo mejor del rock",
+      "trackIds": [
+        "track-1"
+      ]
+    }
+  },
+  "total": 1
+}
