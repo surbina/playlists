@@ -14,6 +14,12 @@
     "react-scripts": "1.1.4",
     "reactstrap": "^6.0.1"
   },
+  "proxy": {
+    "/graphql": {
+      "target": "http://localhost:4000",
+      "ws": true
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
