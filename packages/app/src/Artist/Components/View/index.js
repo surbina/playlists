@@ -1,7 +1,14 @@
-import { graphql } from 'react-apollo';
+import { graphql, compose } from 'react-apollo';
+import { withRouter } from 'react-router';
 
 import { GET_ARTIST } from '../../queries';
 import Artist from './presentational';
+
+const mapPropsToOptions = ({ match }) => ({
+  variables: {
+    id: match.params.id,
+  },
+});
 
 const mapResultsToProps = ({ data }) => {
   const { loading, artist } = data;
@@ -12,14 +19,13 @@ const mapResultsToProps = ({ data }) => {
   };
 }
 
-export default graphql(
-  GET_ARTIST,
-  {
-    props: mapResultsToProps,
-    options: {
-      variables: {
-        id: 'artist-2',
-      },
+export default compose(
+  graphql(
+    GET_ARTIST,
+    {
+      props: mapResultsToProps,
+      options: mapPropsToOptions,
     },
-  },
+  ),
+  withRouter,
 )(Artist);
