@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import client from './apolloClient';
 import { ArtistView } from './Artist';
 import { PlaylistView } from './Playlist';
+import { LandingView } from './Landing';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Switch>
             <Route path="/artist/:id" component={ArtistView} />
             <Route path="/playlist/:id" component={PlaylistView} />
+            <Route path="/" component={LandingView} />
           </Switch>
         </Router>
       </ApolloProvider>
