@@ -14,20 +14,18 @@ function getPlaylists() {
 }
 
 export default {
-  queryFieldResolvers: {
+  Query: {
     playlist: getPlaylist,
     playlists: getPlaylists,
   },
-  typeResolvers: {
-    Playlist: {
-      tracks: playlist => {
-        const items = playlist.trackIds.map(trackId => trackData.items[trackId]);
+  Playlist: {
+    tracks: playlist => {
+      const items = playlist.trackIds.map(trackId => trackData.items[trackId]);
 
-        return {
-          items,
-          total: items.length,
-        };
-      },
-    }
-  }
+      return {
+        items,
+        total: items.length,
+      };
+    },
+  },
 }

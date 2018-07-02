@@ -14,13 +14,11 @@ function getTracks() {
 }
 
 export default {
-  queryFieldResolvers: {
+  Query: {
     track: getTrack,
     tracks: getTracks,
   },
-  typeResolvers: {
-    Track: {
-      artist: track => artistData.items[track.artistId],
-    }
+  Track: {
+    artist: track => artistData.items[track.artistId],
   },
 };

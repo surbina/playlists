@@ -14,20 +14,18 @@ function getArtists() {
 }
 
 export default {
-  queryFieldResolvers: {
+  Query: {
     artist: getArtist,
     artists: getArtists,
   },
-  typeResolvers: {
-    Artist: {
-      tracks: artist => {
-        const items = values(trackData.items).filter(track => (track.artistId === artist.id));
+  Artist: {
+    tracks: artist => {
+      const items = values(trackData.items).filter(track => (track.artistId === artist.id));
 
-        return {
-          items,
-          total: items.length,
-        }
-      },
+      return {
+        items,
+        total: items.length,
+      }
     },
-  }
+  },
 };

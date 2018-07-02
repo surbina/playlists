@@ -1,3 +1,4 @@
+import merge from 'lodash/merge';
 import {
   typeDefs as artistTypeDefs,
   resolvers as artistResolvers,
@@ -8,7 +9,6 @@ import {
 } from './track';
 import {
   typeDefs as queryTypeDefs,
-  resolvers as queryResolvers,
 } from './query';
 import {
   typeDefs as playlistTypeDefs,
@@ -22,9 +22,8 @@ export const typeDefs = `
   ${playlistTypeDefs}
 `;
 
-export const resolvers = {
-  ...queryResolvers,
-  ...artistResolvers.typeResolvers,
-  ...trackResolvers.typeResolvers,
-  ...playlistResolvers.typeResolvers,
-};
+export const resolvers = merge(
+  artistResolvers,
+  trackResolvers,
+  playlistResolvers,
+);
