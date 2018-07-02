@@ -1,0 +1,1 @@
+Este paquete incluye un servidor implementado con [express-js](http://expressjs.com/) que expone un endpoint GraphQL implementado usando el paquete [GraphQL Tools](https://www.apollographql.com/docs/graphql-tools/) provisto por el equipo de Apollo JS.

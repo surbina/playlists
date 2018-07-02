@@ -1,0 +1,1 @@
+This package includes an [express-js](http://expressjs.com/) server that exposes a GraophQL endpoint implemented using the [GraphQL Tools](https://www.apollographql.com/docs/graphql-tools/) provided by the Apollo JS team.

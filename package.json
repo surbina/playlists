@@ -1,6 +1,7 @@
 {
 	"scripts": {
-		"refresh": "npm install && lerna bootstrap"
+		"refresh": "npm install && lerna bootstrap",
+		"start": "lerna run --parallel dev"
 	},
 	"devDependencies": {
 		"lerna": "^2.10.1"
